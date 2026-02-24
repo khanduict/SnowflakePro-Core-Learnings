@@ -25,7 +25,7 @@
  - Then use "COPY INTO" to load the data into the Table
  - Also we can unload data (from Table to Internal Stage) using "COPY INTO" command. Then use "GET" command to download the files to the local computer.
 
-### User Stages
+#### User Stages
   - Tied to a user
   - Cannot be accessed by other users
   - Every user has default stage
