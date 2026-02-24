@@ -18,3 +18,19 @@
      - AWS S3 (AWS)
      -  Google cloud storage (GCP)
      -  Azure container (Azure)
+
+### Internal Stage
+![internal stages](https://github.com/user-attachments/assets/4d495424-fab2-4cd9-b5c3-d6c9b5d808d9)
+ - When we want to copy data into the Table, we first upload the file into the Internal Stage. We do this by using "PUT" Snow sql command. If we use the "PUT" command, the data will be automatically compressed (.gz file ending) by default. If we dunt use anything, the data "AUTO_COMPRESS = TRUE " and compressed with "gzip" by default.
+ - Then use "COPY INTO" to load the data into the Table
+ - Also we can unload data (from Table to Internal Stage) using "COPY INTO" command. Then use "GET" command to download the files to the local computer.
+
+### User Stages
+  - Tied to a user
+  - Cannot be accessed by other users
+  - Every user has default stage
+  - Cannot be altered or dropped
+  - Put files to that stage before loading
+
+### 
+
