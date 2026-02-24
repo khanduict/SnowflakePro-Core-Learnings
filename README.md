@@ -39,5 +39,12 @@
   - Can only be accessed by one table
   - Cannot be altered or dropped
   - Load to one table
-  - Referred to with #### '@%TABLE_NAME'
+  - Referred to with  '@%TABLE_NAME'
+
+#### 3. Named Stages
+  - CREATE STAGE ..
+  - Snowflake database object
+  - Everyone with privileges can access it
+  - Most flexible
+  - Referred to with '@STAGE_NAME'
 
