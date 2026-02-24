@@ -26,12 +26,18 @@
  ![internal stage out](https://github.com/user-attachments/assets/aac9094c-506a-4732-8d93-27fa526b7b83)
  - Also we can unload data (from Table to Internal Stage) using "COPY INTO" command. Then use "GET" command to download the files to the local computer.
 
-#### User Stages
+#### 1. User Stages
   - Tied to a user
   - Cannot be accessed by other users
   - Every user has default stage
   - Cannot be altered or dropped
   - Put files to that stage before loading
+  - Explicitly remove files again
 
-### 
+#### 2. Table Stages
+  - Automatically created with a table
+  - Can only be accessed by one table
+  - Cannot be altered or dropped
+  - Load to one table
+  - Referred to with #### '@%TABLE_NAME'
 
