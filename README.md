@@ -9,6 +9,10 @@
 #### Two types of Stage
 1. Internal Stages
    - Managed by snowflake
+     - 3 different tyes
+        - User stages
+        - Table stages
+        - Internal Named stages
 2. External Stages
    - Managed by external cloud provider
      - AWS S3 (AWS)
