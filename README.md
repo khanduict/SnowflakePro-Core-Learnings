@@ -11,6 +11,6 @@
    - Managed by snowflake
 2. External Stages
    - Managed by external cloud provider
-     -- AWS S3 (AWS)
-     -- Google cloud storage (GCP)
-     -- Azure container (Azure)
+     - AWS S3 (AWS)
+     -  Google cloud storage (GCP)
+     -  Azure container (Azure)
