@@ -35,6 +35,8 @@
   - Cannot be altered or dropped
   - Put files to that stage before loading
   - Explicitly remove files again
+  - Loading to multiple tables
+  - Referred to with '@~'
 
 #### 2. Table Stages
   - Automatically created with a table
@@ -49,6 +51,9 @@
   - Everyone with privileges can access it
   - Most flexible
   - Referred to with '@STAGE_NAME'
+
+Example use case:
+![use case](https://github.com/user-attachments/assets/eef7c328-36cf-4a01-b24f-9e9a143d705e)
 
 
 
