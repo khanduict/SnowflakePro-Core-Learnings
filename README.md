@@ -55,5 +55,14 @@
 Example use case:
 ![use case](https://github.com/user-attachments/assets/eef7c328-36cf-4a01-b24f-9e9a143d705e)
 
+### External Stage
+![external stage](https://github.com/user-attachments/assets/21d71e8c-d7a4-4097-8650-94e9094fb5df)
+
+![external stage - azure container](https://github.com/user-attachments/assets/e1ad89f0-b38e-4270-ac2e-720561bcefeb)
+
+<img width="1000" height="405" alt="list stages" src="https://github.com/user-attachments/assets/f12d0fa8-436e-4ed5-8337-5ca9658b316a" />
+
+
+
 
 
