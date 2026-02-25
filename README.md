@@ -13,6 +13,8 @@
         - User stages
         - Table stages
         - Internal Named stages
+    ![different types of stages](https://github.com/user-attachments/assets/c99b83a7-92ef-4b18-898e-cdc91a0568e2)
+
 2. External Stages
    - Managed by external cloud provider
      - AWS S3 (AWS)
@@ -47,4 +49,6 @@
   - Everyone with privileges can access it
   - Most flexible
   - Referred to with '@STAGE_NAME'
+
+
 
