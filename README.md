@@ -62,12 +62,12 @@ Example use case:
 
 <img width="1000" height="405" alt="list stages" src="https://github.com/user-attachments/assets/f12d0fa8-436e-4ed5-8337-5ca9658b316a" />
 
-#### List command - to list all files and additional properties
+##### List command - to list all files and additional properties
 External stage/Internal named stage - LIST @STAGE_NAME;
 User stage - LIST @~;
 Table stage - LIST @%TABLE_STAGE_NAME;
 
-#### Refereincing stage command
+##### Refereincing stage command
 Copy FROM stage - COPY INTO TABLE_NAME FROM @STAGE_NAME;
 Copy TO stage - COPY INTO @STAGE_NAME FROM TABLE_NAME;
 Query from stage - SELECT * FROM @STAGE_NAME;
@@ -76,7 +76,7 @@ Table stage - SELECT $1, $2, $3 FROM @STAGE_NAME;
 ### Creating and Manaing Stages
 - Go to worksheet -> Create a new worksheet -> rename as Stages
 
-#### Show all named stages
+##### Show all named stages
  SHOW STAGES;
 #### List files in user stage;
   LIST @~;
