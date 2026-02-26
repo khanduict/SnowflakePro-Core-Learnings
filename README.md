@@ -116,6 +116,20 @@ Table stage - SELECT $1, $2, $3 FROM @STAGE_NAME;
 - According to defined COPY statement
 - If data needs to be available immediately for analysis
 - Snowpipe uses serverless features instead of warehouses (no user created warehouse is needed)
+  
+### Snowpipe for Azure
+![snowpipeline](https://github.com/user-attachments/assets/5989b19b-d261-4f6a-83e4-054aa2bb71b4)
+
+* Create PIPE <name>
+AUTO_INGEST = TRUE | FALSE
+INTEGRATION = '<string>'
+COMMENT = '<string_literal>'
+AS <copy_statement> *
+
+
+
+
+
 
 
 
