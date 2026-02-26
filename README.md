@@ -120,11 +120,11 @@ Table stage - SELECT $1, $2, $3 FROM @STAGE_NAME;
 ### Snowpipe for Azure
 ![snowpipeline](https://github.com/user-attachments/assets/5989b19b-d261-4f6a-83e4-054aa2bb71b4)
 
-_Create PIPE <name>
-AUTO_INGEST = TRUE | FALSE
-INTEGRATION = '<string>'
-COMMENT = '<string_literal>'
-AS <copy_statement>_
+*Create PIPE <name>*
+*AUTO_INGEST = TRUE | FALSE*
+*INTEGRATION = '<string>'*
+*COMMENT = '<string_literal>'*
+*AS <copy_statement>*
 
 
 
