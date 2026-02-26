@@ -63,49 +63,49 @@ Example use case:
 <img width="1000" height="405" alt="list stages" src="https://github.com/user-attachments/assets/f12d0fa8-436e-4ed5-8337-5ca9658b316a" />
 
 ##### List command - to list all files and additional properties
-    *External stage/Internal named stage - LIST @STAGE_NAME;
+    External stage/Internal named stage - LIST @STAGE_NAME;
     User stage - LIST @~;
-    Table stage - LIST @%TABLE_STAGE_NAME;*
+    Table stage - LIST @%TABLE_STAGE_NAME;
 
 ##### Refereincing stage command
-    *Copy FROM stage - COPY INTO TABLE_NAME FROM @STAGE_NAME;
+    Copy FROM stage - COPY INTO TABLE_NAME FROM @STAGE_NAME;
     Copy TO stage - COPY INTO @STAGE_NAME FROM TABLE_NAME;
     Query from stage - SELECT * FROM @STAGE_NAME;
-    Table stage - SELECT $1, $2, $3 FROM @STAGE_NAME;*
+    Table stage - SELECT $1, $2, $3 FROM @STAGE_NAME;
 
 ### Creating and Manaing Stages
 - Go to worksheet -> Create a new worksheet -> rename as Stages
 
 ##### Show all named stages
-     *SHOW STAGES;*
+     SHOW STAGES;
 ##### List files in user stage;
-    *LIST @~;*
+    LIST @~;
 
 ##### List files in user stage;
-    *LIST @%LOAN_PAYMENT;*
+    LIST @%LOAN_PAYMENT;
 
 #####  Database to manage stage objects, fileformats etc.
-    *CREATE OR REPLACE DATABASE manage_db;
-    CREATE OR REPLACE SCHEMA external_stages;*
+    CREATE OR REPLACE DATABASE manage_db;
+    CREATE OR REPLACE SCHEMA external_stages;
 
 ##### Creating external stage
-    *CREATE OR REPLACE STAGE manage_db.external_stages.aws_stage
+    CREATE OR REPLACE STAGE manage_db.external_stages.aws_stage
       url='s3://bucketsnowflakes3'
-      credentials=(aws_key_id='ABCD_DUMMY_ID' aws_secret_key='1234abcd_key');*
+      credentials=(aws_key_id='ABCD_DUMMY_ID' aws_secret_key='1234abcd_key');
 
 ##### Description of external stage
-    *DESC STAGE manage_db.external_stages.aws_stage;*
+    DESC STAGE manage_db.external_stages.aws_stage;
     
 ##### Alter external stage   
-    *ALTER STAGE aws_stage
-      SET credentials=(aws_key_id='XYZ_DUMMY_ID' aws_secret_key='987xyz');*
+    ALTER STAGE aws_stage
+      SET credentials=(aws_key_id='XYZ_DUMMY_ID' aws_secret_key='987xyz');
     
 ##### Publicly accessible staging area    
-    *CREATE OR REPLACE STAGE MANAGE_DB.external_stages.aws_stage
-      url='s3://bucketsnowflakes3';*
+    CREATE OR REPLACE STAGE MANAGE_DB.external_stages.aws_stage
+      url='s3://bucketsnowflakes3';
 
 ##### List files in stage
-    *LIST @aws_stage;*
+    LIST @aws_stage;
 
 ### Data Loading
 - Bulk loading - Manually executing the command
