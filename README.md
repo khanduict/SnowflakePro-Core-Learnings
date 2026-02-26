@@ -107,6 +107,15 @@ Table stage - SELECT $1, $2, $3 FROM @STAGE_NAME;
 ##### List files in stage
   LIST @aws_stage;
 
+### Data Loading
+- Bulk loading - Manually executing the command
+- Continous loading - Snowpipe
+
+### Snowpipe
+- Loads data immediately when file appears in a blob storage
+- According to defined COPY statement
+- If data needs to be available immediately for analysis
+- Snowpipe uses serverless features instead of warehouses (no user created warehouse is needed)
 
 
 
