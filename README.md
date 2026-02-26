@@ -120,11 +120,11 @@ Example use case:
 ### Snowpipe for Azure
 ![snowpipeline](https://github.com/user-attachments/assets/5989b19b-d261-4f6a-83e4-054aa2bb71b4)
 
-    *Create PIPE <name> 
+    Create PIPE <name> 
     AUTO_INGEST = TRUE | FALSE
     INTEGRATION = '<string>'
     COMMENT = '<string_literal>'
-    AS <copy_statement>*
+    AS <copy_statement>
 
 
 
